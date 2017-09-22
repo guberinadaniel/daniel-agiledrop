@@ -1,0 +1,47 @@
+<div class="layout-container">
+
+    <header role="banner">
+        {{ page.header }}
+    </header>
+
+    {{ page.navigation }}
+    {{ page.baner }}
+    {{ page.search_filter }}
+
+    <main role="main">
+        <a id="main-content" tabindex="-1"></a>
+
+        <div class="layout-content">
+            {{ page.content }}
+        </div>
+        <div class="layout-content-first-second">
+            {{ page.featured_first }}
+            {{ page.featured_second }}
+        </div>
+        {% if page.sidebar_first %}
+            <aside class="layout-sidebar-first" role="complementary">
+                {{ page.sidebar_first }}
+            </aside>
+        {% endif %}
+
+        {% if page.sidebar_second %}
+            <aside class="layout-sidebar-second" role="complementary">
+                {{ page.sidebar_second }}
+            </aside>
+        {% endif %}
+
+    </main>
+
+    <footer role="contentinfo">
+        {% if page.footer_top %}
+            {{ page.footer_top }}
+        {% endif %}
+        {% if page.footer_menu %}
+            {{ page.footer_menu }}
+        {% endif %}
+        {% if page.footer_bottom %}
+            {{ page.footer_bottom }}
+        {% endif %}
+    </footer>
+
+</div>
