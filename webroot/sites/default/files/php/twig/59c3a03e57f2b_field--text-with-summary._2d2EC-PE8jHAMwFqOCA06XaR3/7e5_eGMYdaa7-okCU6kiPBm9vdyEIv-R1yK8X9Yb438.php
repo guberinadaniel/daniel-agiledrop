@@ -1,16 +1,21 @@
 <?php
 
-/* core/themes/classy/templates/navigation/menu-local-action.html.twig */
-class __TwigTemplate_04f482615e7cff6f8a2de611a6d2335822feada1ee7c3d7d712aff349f69cfc3 extends Twig_Template
+/* core/themes/classy/templates/field/field--text-with-summary.html.twig */
+class __TwigTemplate_c2d36b3ba72751267b11c2f208cab3ee4816ae7fbdf366c29ca5c21bcb7e9cc2 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 1
+        $this->parent = $this->loadTemplate("field--text.html.twig", "core/themes/classy/templates/field/field--text-with-summary.html.twig", 1);
         $this->blocks = array(
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "field--text.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -39,18 +44,12 @@ class __TwigTemplate_04f482615e7cff6f8a2de611a6d2335822feada1ee7c3d7d712aff349f6
             throw $e;
         }
 
-        // line 13
-        echo "<li";
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["attributes"]) ? $context["attributes"] : null), "html", null, true));
-        echo ">";
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["link"]) ? $context["link"] : null), "html", null, true));
-        echo "</li>
-";
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/navigation/menu-local-action.html.twig";
+        return "core/themes/classy/templates/field/field--text-with-summary.html.twig";
     }
 
     public function isTraitable()
@@ -60,24 +59,12 @@ class __TwigTemplate_04f482615e7cff6f8a2de611a6d2335822feada1ee7c3d7d712aff349f6
 
     public function getDebugInfo()
     {
-        return array (  43 => 13,);
+        return array (  11 => 1,);
     }
 
     public function getSource()
     {
-        return "{#
-/**
- * @file
- * Theme override for a single local action link.
- *
- * Available variables:
- * - attributes: HTML attributes for the wrapper element.
- * - link: A rendered link element.
- *
- * @see template_preprocess_menu_local_action()
- */
-#}
-<li{{ attributes }}>{{ link }}</li>
+        return "{% extends \"field--text.html.twig\" %}
 ";
     }
 }
