@@ -5,6 +5,58 @@
 //
 // ========================================
 
-.header {
+header {
+  .fluid {
+    display: block;
+    width: 100%;
+    background: rgb(221, 231, 233);
+    .region-header {
+      display: flex;
+      width: 960px;
+      margin: auto;
+      #block-onboardingproject {
+        width:50%;
+        .field--name-body {
+          display: flex;
+          justify-content: flex-start;
+          p {
+            margin: 10px 0;
+          }
+        }
+      }
 
+      #block-headerphonenumber {
+        width:24%;
+        .field--name-body {
+          display: flex;
+          justify-content: flex-end;
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      #block-headeremailaddress {
+        width:24%;
+        .field--name-body {
+          display: flex;
+          justify-content: flex-end;
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
 }
