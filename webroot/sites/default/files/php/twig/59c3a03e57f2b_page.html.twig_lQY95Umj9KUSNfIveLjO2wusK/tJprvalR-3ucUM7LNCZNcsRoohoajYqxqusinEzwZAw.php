@@ -77,7 +77,7 @@ class __TwigTemplate_930f09557c552322bbe6afbfac06efab7019f74e4af4cef9ecdee447088
         echo "
         </div>
     </section>
-    
+
     <main role=\"main\">
         <a id=\"main-content\" tabindex=\"-1\"></a>
 
@@ -207,7 +207,7 @@ class __TwigTemplate_930f09557c552322bbe6afbfac06efab7019f74e4af4cef9ecdee447088
             {{ page.search_filter }}
         </div>
     </section>
-    
+
     <main role=\"main\">
         <a id=\"main-content\" tabindex=\"-1\"></a>
 
