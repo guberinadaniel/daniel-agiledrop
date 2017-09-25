@@ -6,5 +6,60 @@
 // ========================================
 
 .navigation {
-
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(122, 132, 134);
+    &:hover {
+      color: rgb(221, 231, 233);
+    }
+    &:active {
+      color: rgb(0, 0, 0);
+    }
+  }
+  .fluid {
+    display: block;
+    width: 100%;
+    .region-navigation {
+      width: 960px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #block-agiledrop-kick-main-menu {
+        width: 50%;
+        ul.menu {
+          display: flex;
+          li.menu-item{
+            margin: auto;
+          }
+        }
+      }
+      .menu--account {
+        .menu {
+          li.menu-item {
+            &:hover {
+              background-color: rgb(38, 142, 172);
+              border: 1px solid rgb(38, 142, 172);
+            }
+            background-color: rgb(41, 193, 225);
+            border: 1px solid rgb(41, 193, 225);
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            cursor: pointer;
+            margin: -10px 10px 0 10px;
+            padding: 0.250em 1.50em;
+            border-radius: 1.2em;
+            line-height: normal;
+            a {
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
