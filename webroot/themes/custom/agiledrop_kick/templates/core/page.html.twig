@@ -1,13 +1,19 @@
 <div class="layout-container">
 
     <header role="banner">
+        <div class="fluid">
         {{ page.header }}
+        </div>
     </header>
-
+    <div class="fluid">
     {{ page.navigation }}
+    </div>
+    <div class="fluid">
     {{ page.baner }}
+    </div>
+    <div class="fluid">
     {{ page.search_filter }}
-
+    </div>
     <main role="main">
         <a id="main-content" tabindex="-1"></a>
 
@@ -15,7 +21,9 @@
             {{ page.content }}
         </div>
         <div class="layout-content-first-second">
+            <div class="fluid">
             {{ page.featured_first }}
+            </div>
             {{ page.featured_second }}
         </div>
         {% if page.sidebar_first %}
