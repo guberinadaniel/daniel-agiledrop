@@ -1,0 +1,32 @@
+.region-footer-bottom {
+  display: block;
+  width: 1200px;
+  margin: 70px auto 30px auto;
+  #block-footerrightsreserved {
+    width: 1200px;
+    .field__item {
+      hr {
+        width: 100%;
+        border-top: 1px solid rgb(221, 231, 233);
+      }
+      p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: small;
+        color: rgb(85, 89, 95);
+      }
+    }
+  }
+}
+//.orange-triangle-footer {
+//  width: 300px;
+//  position: absolute;
+//  bottom: 41px;
+//  left: -150px;
+//}
+//.blue-triangle-footer {
+//  width: 370px;
+//  position: absolute;
+//  bottom: -60px;
+//  right: -150px;
+//}

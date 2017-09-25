@@ -1,0 +1,38 @@
+.region-footer-menu {
+  display: flex;
+  width: 1200px;
+  margin: 30px auto 30px auto;
+  a {
+    color: rgb(122, 132, 134);
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: rgb(221, 231, 233);
+    }
+    &:active {
+      color: rgb(0, 0, 0);
+    }
+  }
+  p {
+    text-transform: uppercase;
+    color: rgb(122, 132, 134);
+  }
+  strong {
+    color: rgb(0, 0, 0);
+  }
+  #block-footermenlogo {
+    width: 10%;
+  }
+  #block-footermenu {
+    width: 30%;
+    padding-left: 60px;
+  }
+  #block-footercontact {
+    width: 30%;
+    padding-left: 60px;
+  }
+  #block-newsleter {
+    width: 30%;
+    padding-left: 60px;
+  }
+}
