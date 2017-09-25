@@ -4,6 +4,11 @@
 // Landing page specific styling
 //
 // ========================================
+
+//**************************
+//Main content on homepage
+//**************************
+
 .region-content {
   display: flex;
   max-width: 1200px;
@@ -38,6 +43,57 @@
       .boost-event-text {
         display: inline-block;
         width: 380px;
+      }
+    }
+  }
+}
+
+//*******************************
+//View latest event on homepage
+//*******************************
+.region-featured-first {
+  background-color: rgb(221, 231, 233);
+  #block-views-block-homepage-latest-events-block-1 {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 100px;
+    h2 {
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      padding-top: 80px;
+    }
+    .view-content {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 290px;
+        height: 300px;
+      }
+      .views-field-title {
+        padding: 20px 0 0 30px;
+        a {
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            color: rgb(110, 110, 110);
+          }
+          &:active {
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+      .views-field-field__event-start-date {
+        padding: 0 0 0 30px;
+        .field-content {
+          color: rgb(247, 147, 29);
+          font-size: small;
+        }
+      }
+      .views-row {
+        background: white;
+        padding-bottom: 60px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
       }
     }
   }
