@@ -1,0 +1,44 @@
+// ========================================
+//
+// @file _homepage.scss
+// Landing page specific styling
+//
+// ========================================
+.region-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto 50px auto;
+
+  #block-welcometoonboardingproject {
+    width: 60%;
+    padding-right: 20px;
+    h2{
+      text-transform: uppercase;
+    }
+    h4{
+      text-transform: uppercase;
+      margin-top: -20px;
+    }
+    p {
+      text-align: justify;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
+
+  #block-boostyourevent {
+    width: 40%;
+    .boost-event {
+      img {
+        float: left;
+        vertical-align: top;
+        padding-top: 25px;
+        margin-right: 30px;
+      }
+      .boost-event-text {
+        display: inline-block;
+        width: 380px;
+      }
+    }
+  }
+}
