@@ -98,3 +98,73 @@
     }
   }
 }
+
+//************************************
+//View featured companies on homepage
+//************************************
+
+.region-featured-second {
+  #block-views-block-featured-companies-block-1 {
+    max-width: 1200px;
+    margin: auto;
+    h2 {
+      text-transform: uppercase;
+      margin: 60px 0;
+    }
+    .view-featured-companies {
+      .more-link {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        a {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          &:hover {
+            background-color: rgb(38, 142, 172);
+            border: 1px solid rgb(38, 142, 172);
+          }
+          background-color: rgb(41, 193, 225);
+          border: 1px solid rgb(41, 193, 225);
+          display: inline-block;
+          text-align: center;
+          text-transform: uppercase;
+          cursor: pointer;
+          margin: 20px 10px 0 10px;
+          padding: 0.4em 1.5em;
+          border-radius: 1.2em;
+          line-height: normal;
+        }
+      }
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        .views-row {
+          margin: 15px 0;
+          width: 33%;
+          .views-field-title {
+            margin-bottom: 10px;
+            h5 {
+              display: inline;
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+          img {
+            height: 80px;
+            width: 80px;
+            float: left;
+            margin: 0 20px 0 0;
+          }
+          .views-field-field__company-description {
+            display: flex;
+            p {
+              margin:0;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
