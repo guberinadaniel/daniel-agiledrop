@@ -1,0 +1,49 @@
+//**********************************
+//Locations page content styling
+//**********************************
+
+.view-locations {
+  .view-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .views-row {
+      max-width: 280px;
+      margin: 30px auto 30px auto;
+      padding-bottom: 60px;
+      background-color: rgb(221, 231, 233);
+      .views-field-field__location-image {
+
+      }
+      .views-field-title {
+        margin:20px 0 0 20px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            color: rgb(110, 110, 110);
+          }
+          &:active {
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+      .views-field-field__location-title {
+        margin: 10px 0 0 20px;
+        color: orange;
+        a {
+          text-decoration: none;
+          color: orange;
+          &:hover {
+            color: rgb(188, 110, 27);
+          }
+          &:active {
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+}
