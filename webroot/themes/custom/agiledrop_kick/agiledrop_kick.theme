@@ -8,7 +8,7 @@ use Drupal\Core\Template\Attribute;
  *
  * Adds body classes if certain regions have content.
  */
-function onboard_kick_preprocess_html(&$variables) {
+function agiledrop_kick_preprocess_html(&$variables) {
   // Add information about the number of sidebars.
   if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
     $variables['attributes']['class'][] = 'sidebar-one';

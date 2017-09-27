@@ -1,0 +1,21 @@
+//*******************************
+//Company pages content styling
+//*******************************
+
+.node--type-company-ct {
+  .field--name-field__company-title {
+    font-size: 30px;
+    border-bottom: 1px solid rgb(221, 231, 233);
+    padding-bottom: 40px;
+    margin: 0 0 30px 0;
+  }
+  .field--name-field__company-logo {
+    float: left;
+    margin: 0 30px 20px 0;
+  }
+  .field--name-field__company-description {
+    p {
+      text-align: justify;
+    }
+  }
+}
