@@ -27,9 +27,20 @@
     <main role="main">
         <a id="main-content" tabindex="-1"></a>
 
+
+        {% if page.sidebar_first %}
+            <aside class="layout-sidebar-first clearfix" role="complementary">
+                {{ page.sidebar_first }}
+            </aside>
+        {% endif %}
         <div class="layout-content">
             {{ page.content }}
         </div>
+        {% if page.sidebar_second %}
+            <aside class="layout-sidebar-second clearfix" role="complementary">
+                {{ page.sidebar_second }}
+            </aside>
+        {% endif %}
         <div class="layout-content-first-second">
             <section class="featured-first">
                 <div class="fluid">
@@ -38,17 +49,7 @@
             </section>
             {{ page.featured_second }}
         </div>
-        {% if page.sidebar_first %}
-            <aside class="layout-sidebar-first" role="complementary">
-                {{ page.sidebar_first }}
-            </aside>
-        {% endif %}
 
-        {% if page.sidebar_second %}
-            <aside class="layout-sidebar-second" role="complementary">
-                {{ page.sidebar_second }}
-            </aside>
-        {% endif %}
 
     </main>
 
