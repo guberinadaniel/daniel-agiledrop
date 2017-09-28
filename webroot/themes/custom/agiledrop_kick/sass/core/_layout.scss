@@ -5,12 +5,19 @@
 //
 // ========================================
 
-.layout-sidebar-first {
+.layout-sidebar-first  {
   width: 24%;
   display: inline-block;
   float: left;
 }
 
+.clearfix:before {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 .layout-content {
   width: 48%;
   display:inline-block;

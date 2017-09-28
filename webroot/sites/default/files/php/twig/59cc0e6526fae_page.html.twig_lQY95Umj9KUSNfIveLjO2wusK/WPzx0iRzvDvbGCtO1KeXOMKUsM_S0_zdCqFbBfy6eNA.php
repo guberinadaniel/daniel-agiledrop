@@ -86,7 +86,7 @@ class __TwigTemplate_930f09557c552322bbe6afbfac06efab7019f74e4af4cef9ecdee447088
         // line 31
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())) {
             // line 32
-            echo "            <aside class=\"layout-sidebar-first\" role=\"complementary\">
+            echo "            <aside class=\"layout-sidebar-first clearfix\" role=\"complementary\">
                 ";
             // line 33
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()), "html", null, true));
@@ -105,7 +105,7 @@ class __TwigTemplate_930f09557c552322bbe6afbfac06efab7019f74e4af4cef9ecdee447088
         // line 39
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())) {
             // line 40
-            echo "            <aside class=\"layout-sidebar-second\" role=\"complementary\">
+            echo "            <aside class=\"layout-sidebar-second clearfix\" role=\"complementary\">
                 ";
             // line 41
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()), "html", null, true));
@@ -214,7 +214,7 @@ class __TwigTemplate_930f09557c552322bbe6afbfac06efab7019f74e4af4cef9ecdee447088
 
 
         {% if page.sidebar_first %}
-            <aside class=\"layout-sidebar-first\" role=\"complementary\">
+            <aside class=\"layout-sidebar-first clearfix\" role=\"complementary\">
                 {{ page.sidebar_first }}
             </aside>
         {% endif %}
@@ -222,7 +222,7 @@ class __TwigTemplate_930f09557c552322bbe6afbfac06efab7019f74e4af4cef9ecdee447088
             {{ page.content }}
         </div>
         {% if page.sidebar_second %}
-            <aside class=\"layout-sidebar-second\" role=\"complementary\">
+            <aside class=\"layout-sidebar-second clearfix\" role=\"complementary\">
                 {{ page.sidebar_second }}
             </aside>
         {% endif %}

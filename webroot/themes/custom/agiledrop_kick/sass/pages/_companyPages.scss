@@ -18,4 +18,42 @@
       text-align: justify;
     }
   }
+  .field--name-field-indu {
+    max-width: 400px;
+    min-height: 87px;
+    background: #4498e0;    //TODO   <--------------  delete this background
+    border: 3px solid rgb(221, 231, 233);
+    ::before {
+      content: url("/themes/custom/onboard_kick/assets/images/icons/data-icon.png");
+      padding-right: 45px;
+      position: relative;
+      top: 18px;
+      left: 20px;
+      display: block;
+      float: left;
+    }
+  }
+  .field--name-field__company-website {
+
+  }
+  .field--name-field__company-phone-number {
+
+  }
+  .field--name-field__company-email {
+
+  }
+  .field--name-field__company-address {
+    iframe { }
+    p { }
+  }
 }
+
+
+//Overide
+
+.page-node-type-company-ct {
+  img.blue-triangle, img.orange-triangle {
+    display: none;
+  }
+}
+
