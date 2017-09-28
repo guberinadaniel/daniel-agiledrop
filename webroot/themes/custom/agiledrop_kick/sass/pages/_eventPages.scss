@@ -1,0 +1,78 @@
+//*******************************
+//Event pages | content styling
+//*******************************
+
+.node--type-event {
+  .field--name-field__event-image,
+  .field--name-field__event-title,
+  .field--name-field__event-type {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .field--name-field__event-image{
+    margin-top: 60px;
+    img{
+      border-radius: 50%
+    }
+  }
+  .field--name-field__event-title {
+    margin-top: 30px;
+    font-size: xx-large;
+  }
+  .field--name-field__event-type {
+    margin-top: 15px;
+    a {
+      text-decoration: none;
+      border-left: 4px solid rgb(41, 193, 225);
+      padding-left: 15px;
+      vertical-align: sub;
+      color: rgb(0, 0, 0);
+      &:hover {
+        color: rgb(110, 110, 110);
+      }
+      &:active {
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+  .field--name-field__event-start-date {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    float: left;
+    margin-top: 20px;
+    .field__label {
+      font-weight: normal;
+      border-left: 4px solid rgb(41, 193, 225);
+      padding: 0 0 5px 15px;
+    }
+  }
+  .field--name-field__event-end-date {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    float: right;
+    margin-top: 20px;
+    .field__label {
+      font-weight: normal;
+      border-left: 4px solid rgb(41, 193, 225);
+      padding: 0 0 5px 15px;
+    }
+  }
+  .field--name-field__event-description {
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+//Override-disable triangles in the services section
+
+.page-node-type-event {
+  img.blue-triangle, img.orange-triangle {
+    display: none;
+  }
+}
