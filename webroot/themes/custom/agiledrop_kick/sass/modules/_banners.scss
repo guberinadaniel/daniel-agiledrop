@@ -1,0 +1,40 @@
+.banner {
+  .fluid {
+    display: block;
+    width: 100%;
+    margin: auto;
+    .region-banner {
+      #block-eventsbanner{
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        .field--name-body{
+          img{
+            width: 100%;
+          }
+          h1{
+            color: white;
+            font-size: 3rem;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 2px;
+            width: 100%;
+          }
+          h4{
+            color: white;
+            font-size: 1.2rem;
+            font-weight: lighter;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 10px;
+            width: 100%
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,7 +15,7 @@ libraries:
 regions:
   header: 'Header'
   navigation: 'Navigation'
-  hero: 'Hero'
+  banner: 'Banner'
   search_filter: 'Search Filter'
   content: 'Content'
   sidebar_first: 'Sidebar first'
