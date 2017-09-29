@@ -11,13 +11,6 @@
   float: left;
 }
 
-.clearfix:before {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
 .layout-content {
   width: 49%;
   display:inline-block;
@@ -44,3 +37,11 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+//.clearfix:before {
+//  content: ".";
+//  display: block;
+//  height: 0;
+//  clear: both;
+//  visibility: hidden;
+//}
