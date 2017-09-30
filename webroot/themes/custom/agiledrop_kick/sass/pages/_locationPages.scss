@@ -1,90 +1,54 @@
-//*******************************
-//Company pages | content styling
-//*******************************
+//**********************************
+//Location pages | content styling
+//**********************************
 
-.node--type-company-ct {
-  .field--name-field__company-title {
+.node--type-location {
+  .field--name-field__location-title {
     font-size: 30px;
     border-bottom: 1px solid rgb(221, 231, 233);
     padding-bottom: 40px;
     margin: 0 0 30px 0;
   }
-  .field--name-field__company-logo {
-    float: left;
-    margin: 0 30px 20px 0;
-  }
-  .field--name-field__company-description {
-    p {
-      text-align: justify;
+  .field--name-field__location-image {
+    img {
+      float: left;
+      margin: 0 30px 20px 0;
     }
   }
-  .field--name-field-indu {         // <---------------------------------------------------------------  INDUSTRY FIELD
-    display: inline-block;
-    position: relative;
-    max-width: 400px;
-    width: 100%;
-    min-height: 87px;
-    border: 3px solid rgb(221, 231, 233);
-    margin: 20px 10px 20px 0;
-    &:hover {
-      background-color: rgba(247, 147, 29, 0.09);
-      border: 3px solid rgb(247, 147, 29);
-      transition-duration: 0.5s;
-      transition-timing-function: ease;
-      transition-property: all;
+  .field--name-field__location-description {
+    text-align: justify;
+    padding: 0 10px;
+    min-width: 320px;
+  }
+  .field--name-field-equipment.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .field--name-field-equipment {
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+    .field__label {
+
     }
-    a {
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      &:hover {
-        color: rgb(247, 147, 29);
-        &::before {
-          content: '';
+    .field__items {
+      .field__item{
+        display: inline-block;
+        a{
+          text-decoration: none;
+          color: white;
+          background: #2bc3cf;
+          padding: 15px 24px;
+          text-transform: uppercase;
           display: inline-block;
-          width: 80px;
-          height: 40px;
-          vertical-align: -14px;
-          margin-right: 21px;
-          padding-left: 75px;
-          border-right: 4px solid rgb(247, 147, 29);
-          background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/data-icon.png");
-          background-repeat: no-repeat;
-          background-size: 50px 50px;
-          background-position: left center;
-          margin-top:17px;
-          margin-left:20px;
+          margin: 10px 10px 10px 0;
         }
       }
-      &::before {
-        content: '';
-        display: inline-block;
-        width: 80px;
-        height: 40px;
-        vertical-align: -14px;
-        margin-right: 21px;
-        padding-left: 75px;
-        border-right: 4px solid rgb(41, 193, 225);
-        background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/data-icon.png");
-        background-repeat: no-repeat;
-        background-size: 50px 50px;
-        background-position: left center;
-        margin-top:17px;
-        margin-left:20px;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        //background-color: rgba(247, 147, 29, 0.26);
-        width: 100%;
-        height: 100%;
-
-      }
     }
   }
-  .field--name-field__company-website {      // <-----------------------------------------------  COMPANY WEBSITE FIELD
-    display: inline-block;
+  .field--name-field__location-website {      // <-----------------------------------------------  LOCATION WEBSITE FIELD
+    display: block;
     position: relative;
     max-width: 400px;
     width: 100%;
@@ -147,44 +111,26 @@
       }
     }
   }
-
-  .field--name-field__company-phone-number {       //   <-----------------------------------------  COMPANY PHONE FIELD
-      display: inline-block;
-      position: relative;
-      max-width: 400px;
-      width: 100%;
-      min-height: 87px;
-      border: 3px solid rgb(221, 231, 233);
-      margin: 20px 10px 20px 0;
+  .field--name-field__location-phone-number {       //   <-----------------------------------------  LOCATION PHONE FIELD
+    display: block;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    min-height: 87px;
+    border: 3px solid rgb(221, 231, 233);
+    margin: 20px 10px 20px 0;
+    &:hover {
+      background-color: rgba(247, 147, 29, 0.09);
+      border: 3px solid rgb(247, 147, 29);
+      transition-duration: 0.5s;
+      transition-timing-function: ease;
+      transition-property: all;
+    }
+    p {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
       &:hover {
-        background-color: rgba(247, 147, 29, 0.09);
-        border: 3px solid rgb(247, 147, 29);
-        transition-duration: 0.5s;
-        transition-timing-function: ease;
-        transition-property: all;
-      }
-      p {
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        &:hover {
-          color: rgb(247, 147, 29);
-          &::before {
-            content: '';
-            display: inline-block;
-            width: 80px;
-            height: 40px;
-            vertical-align: -14px;
-            margin-right: 21px;
-            padding-left: 75px;
-            border-right: 4px solid rgb(247, 147, 29);
-            background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/phone-icon.png");
-            background-repeat: no-repeat;
-            background-size: 50px 50px;
-            background-position: left center;
-            margin-top: 5px;
-            margin-left:20px;
-          }
-        }
+        color: rgb(247, 147, 29);
         &::before {
           content: '';
           display: inline-block;
@@ -193,28 +139,44 @@
           vertical-align: -14px;
           margin-right: 21px;
           padding-left: 75px;
-          border-right: 4px solid rgb(41, 193, 225);
+          border-right: 4px solid rgb(247, 147, 29);
           background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/phone-icon.png");
           background-repeat: no-repeat;
           background-size: 50px 50px;
           background-position: left center;
           margin-top: 5px;
-          margin-left: 20px;
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-
+          margin-left:20px;
         }
       }
-    }
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 80px;
+        height: 40px;
+        vertical-align: -14px;
+        margin-right: 21px;
+        padding-left: 75px;
+        border-right: 4px solid rgb(41, 193, 225);
+        background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/phone-icon.png");
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-position: left center;
+        margin-top: 5px;
+        margin-left: 20px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-  .field--name-field__company-email {       //  <-------------------------------------------------  COMPANY EMAIL FIELD
-    display: inline-block;
+      }
+    }
+  }
+  .field--name-field__location-email {       //  <-------------------------------------------------  LOCATION EMAIL FIELD
+    display: block;
     position: relative;
     max-width: 400px;
     width: 100%;
@@ -277,7 +239,7 @@
       }
     }
   }
-  .field--name-field__company-address {         //    <--------------  COMPANY ADDRESS FIELD WITH G-MAP
+  .field--name-field__location-address {         //    <--------------  LOCATION ADDRESS FIELD WITH G-MAP
     display: block;
     max-width: 820px;
     height: 250px;
@@ -304,14 +266,5 @@
       padding: 20px 20px 20px 0;
       margin: 0 20px 0 20px;
     }
-  }
-}
-
-
-//Override-disable triangles in the services section
-
-.page-node-type-company-ct {
-  img.blue-triangle, img.orange-triangle {
-    display: none;
   }
 }
