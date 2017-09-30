@@ -306,12 +306,3 @@
     }
   }
 }
-
-
-//Override-disable triangles in the services section
-
-.page-node-type-company-ct {
-  img.blue-triangle, img.orange-triangle {
-    display: none;
-  }
-}

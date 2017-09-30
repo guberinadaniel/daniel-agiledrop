@@ -84,3 +84,17 @@ footer {
     }
   }
 }
+//****************************************************************************
+// Disables triangles in the services section on all pages except on homepage
+//****************************************************************************
+
+.path-companies,
+.path-events,
+.path-locations,
+.page-node-type-company-ct,
+.page-node-type-event,
+.page-node-type-location {
+  img.blue-triangle, img.orange-triangle {
+    display: none;
+  }
+}
