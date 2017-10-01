@@ -1,12 +1,11 @@
 .region-footer-bottom {
   display: block;
-  width: 1200px;
   margin: 70px auto 30px auto;
   #block-footerrightsreserved {
-    width: 1200px;
     .field__item {
+      position: relative;
       hr {
-        width: 100%;
+        max-width: 1200px;
         border-top: 1px solid rgb(221, 231, 233);
       }
       p {
@@ -14,19 +13,21 @@
         text-transform: uppercase;
         font-size: small;
         color: rgb(85, 89, 95);
+        margin-bottom: 30px;
       }
     }
   }
 }
-//.orange-triangle-footer {
-//  width: 300px;
-//  position: absolute;
-//  bottom: 41px;
-//  left: -150px;
-//}
-//.blue-triangle-footer {
-//  width: 370px;
-//  position: absolute;
-//  bottom: -60px;
-//  right: -150px;
-//}
+
+.triangle-xl-orange{
+  position: absolute;
+  left: 0;
+  bottom: 59px;
+  width: 20%;
+}
+.triangle-xl-blue{
+  position: absolute;
+  right: 0;
+  bottom: -32px;
+  width: 23%;
+}
