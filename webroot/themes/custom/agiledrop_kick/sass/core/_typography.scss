@@ -5,6 +5,20 @@
 //
 // ========================================
 
+@font-face {
+  font-family:'Karla';
+  src: url('../../assets/fonts/Karla-Regular/Karla-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf') format('truetype')
+}
+body {
+  font-family: 'Karla', sans-serif;
+  color: rgb(85, 89, 95);
+}
+
+
 p {
 
 	&:last-child {
@@ -14,6 +28,7 @@ p {
 
 a {
   transition: 0.4s;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -22,7 +37,8 @@ h3,
 h4,
 h5,
 h6 {
-
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
   a {
     color: inherit;
 
