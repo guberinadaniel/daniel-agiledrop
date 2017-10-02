@@ -2,7 +2,7 @@
 //*****************
 //Homepage slider
 //*****************
-
+/*TODO uncoment this
 #block-views-block-slideshow-homepage-block-1 {
   .views-field-nothing {
     .caption {
@@ -43,5 +43,52 @@
     height: 1rem;
     border: 3px solid white;
     border-radius: 1rem;
+  }
+}
+*/
+@media (max-width:$screen-xs) {
+  #block-views-block-slideshow-homepage-block-1 {
+    .views-field-nothing {
+      .caption {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        right: 15%;
+        background: rgba(0, 0, 0, 0.1);
+        h1 {
+          font-size: 5.8vw;
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+        }
+        h3 {
+          display: none;
+          font-size: 1.4vw;
+          font-weight: lighter;
+          text-decoration: none;
+          color: #eee;
+          text-transform: uppercase;
+          margin-top: -15px;
+        }
+
+      }
+    }
+
+    .slick-dots {
+      display: none;
+      position: absolute;
+      bottom: 5%;
+    }
+    .slick-dots li button::before {
+      display: none;
+      font-size: 0;
+      width: 1rem;
+      height: 1rem;
+      border: 3px solid white;
+      border-radius: 1rem;
+    }
   }
 }
