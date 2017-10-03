@@ -311,20 +311,29 @@
 */ //TODO delte
 
 @media (max-width:$screen-xs) {
+  .sidebar-one .layout-content {
+    width: 100%;
+    display: block;
+    .block-views-blockevents-what-we-are-up-to-block-1 {
+      padding: 15px;
+    }
+  }
   .node--type-company-ct {
+    padding: 15px;
     .field--name-field__company-title {
       font-size: 30px;
       border-bottom: 1px solid rgb(221, 231, 233);
-      padding-bottom: 40px;
+      padding-bottom: 10px;
       margin: 0 0 30px 0;
       color: #000;
     }
     .field--name-field__company-logo {
       float: left;
-      margin: 0 30px 20px 0;
+      margin: 0 15px 5px 0;
     }
     .field--name-field__company-description {
       p {
+        font-size: 14px;
         text-align: justify;
       }
     }
@@ -336,6 +345,7 @@
       min-height: 87px;
       border: 3px solid rgb(221, 231, 233);
       margin: 20px 10px 20px 0;
+      padding: 15px 0 0 0;
       &:hover {
         background-color: rgba(247, 147, 29, 0.09);
         border: 3px solid rgb(247, 147, 29);
@@ -351,35 +361,35 @@
           &::before {
             content: '';
             display: inline-block;
-            width: 80px;
+            width: 10px;
             height: 40px;
             vertical-align: -14px;
-            margin-right: 21px;
-            padding-left: 75px;
+            margin-right: 10px;
+            padding-left: 40px;
             border-right: 4px solid rgb(247, 147, 29);
             background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/data-icon.png");
             background-repeat: no-repeat;
-            background-size: 50px 50px;
+            background-size: 30px 30px;
             background-position: left center;
-            margin-top:17px;
-            margin-left:20px;
+            margin-top: 5px;
+            margin-left:21px;
           }
         }
         &::before {
           content: '';
           display: inline-block;
-          width: 80px;
+          width: 10px;
           height: 40px;
           vertical-align: -14px;
-          margin-right: 21px;
-          padding-left: 75px;
-          border-right: 4px solid rgb(41, 193, 225);
+          margin-right: 10px;
+          padding-left: 40px;
+          border-right: 4px solid rgb(247, 147, 29);
           background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/data-icon.png");
           background-repeat: no-repeat;
-          background-size: 50px 50px;
+          background-size: 30px 30px;
           background-position: left center;
-          margin-top:17px;
-          margin-left:20px;
+          margin-top: 5px;
+          margin-left:21px;
         }
         &::after {
           content: '';
@@ -401,6 +411,7 @@
       min-height: 87px;
       border: 3px solid rgb(221, 231, 233);
       margin: 20px 10px 20px 0;
+      padding: 15px 0 0 0;
       &:hover {
         background-color: rgba(247, 147, 29, 0.09);
         border: 3px solid rgb(247, 147, 29);
@@ -416,35 +427,35 @@
           &::before {
             content: '';
             display: inline-block;
-            width: 80px;
+            width: 10px;
             height: 40px;
             vertical-align: -14px;
-            margin-right: 21px;
-            padding-left: 75px;
+            margin-right: 10px;
+            padding-left: 40px;
             border-right: 4px solid rgb(247, 147, 29);
             background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/web-icon.png");
             background-repeat: no-repeat;
-            background-size: 50px 50px;
+            background-size: 30px 30px;
             background-position: left center;
-            margin-top:17px;
-            margin-left:20px;
+            margin-top: 5px;
+            margin-left:21px;
           }
         }
         &::before {
           content: '';
           display: inline-block;
-          width: 80px;
+          width: 10px;
           height: 40px;
           vertical-align: -14px;
-          margin-right: 21px;
-          padding-left: 75px;
-          border-right: 4px solid rgb(41, 193, 225);
+          margin-right: 10px;
+          padding-left: 40px;
+          border-right: 4px solid rgb(247, 147, 29);
           background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/web-icon.png");
           background-repeat: no-repeat;
-          background-size: 50px 50px;
+          background-size: 30px 30px;
           background-position: left center;
-          margin-top:17px;
-          margin-left:20px;
+          margin-top: 5px;
+          margin-left:21px;
         }
         &::after {
           content: '';
@@ -481,35 +492,35 @@
           &::before {
             content: '';
             display: inline-block;
-            width: 80px;
+            width: 10px;
             height: 40px;
             vertical-align: -14px;
-            margin-right: 21px;
-            padding-left: 75px;
+            margin-right: 10px;
+            padding-left: 40px;
             border-right: 4px solid rgb(247, 147, 29);
             background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/phone-icon.png");
             background-repeat: no-repeat;
-            background-size: 50px 50px;
+            background-size: 30px 30px;
             background-position: left center;
             margin-top: 5px;
-            margin-left:20px;
+            margin-left:21px;
           }
         }
         &::before {
           content: '';
           display: inline-block;
-          width: 80px;
+          width: 10px;
           height: 40px;
           vertical-align: -14px;
-          margin-right: 21px;
-          padding-left: 75px;
-          border-right: 4px solid rgb(41, 193, 225);
+          margin-right: 10px;
+          padding-left: 40px;
+          border-right: 4px solid rgb(247, 147, 29);
           background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/phone-icon.png");
           background-repeat: no-repeat;
-          background-size: 50px 50px;
+          background-size: 30px 30px;
           background-position: left center;
           margin-top: 5px;
-          margin-left: 20px;
+          margin-left:21px;
         }
         &::after {
           content: '';
@@ -546,15 +557,15 @@
           &::before {
             content: '';
             display: inline-block;
-            width: 76px;
+            width: 10px;
             height: 40px;
             vertical-align: -14px;
-            margin-right: 21px;
-            padding-left: 75px;
+            margin-right: 10px;
+            padding-left: 40px;
             border-right: 4px solid rgb(247, 147, 29);
             background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/address-icon.png");
             background-repeat: no-repeat;
-            background-size: 40px 40px;
+            background-size: 30px 30px;
             background-position: left center;
             margin-top: 5px;
             margin-left:21px;
@@ -563,18 +574,18 @@
         &::before {
           content: '';
           display: inline-block;
-          width: 76px;
+          width: 10px;
           height: 40px;
           vertical-align: -14px;
-          margin-right: 21px;
-          padding-left: 75px;
-          border-right: 4px solid rgb(41, 193, 225);
+          margin-right: 10px;
+          padding-left: 40px;
+          border-right: 4px solid rgb(247, 147, 29);
           background-image: url("/themes/custom/agiledrop_kick/assets/images/icons/address-icon.png");
           background-repeat: no-repeat;
-          background-size: 40px 40px;
+          background-size: 30px 30px;
           background-position: left center;
           margin-top: 5px;
-          margin-left: 21px;
+          margin-left:21px;
         }
         &::after {
           content: '';
@@ -592,7 +603,7 @@
       max-width: 820px;
       height: 250px;
       border: 3px solid rgb(221, 231, 233);
-      margin: 20px 10px 20px 0;
+      margin-top: 15px;
       iframe {
         float: right;
         max-width: 522px;
@@ -601,20 +612,25 @@
         margin: 12px 12px 0 0;
       }
       p {
-        float: left;
-        display: inline-block;
-        padding-left: 20px;
-        padding-top: 50px;
-        width: 29%;
+        float: none;
+        display:block;
+        padding-left: 0;
+        padding-top: 66px;
+        width: 100%;
         color: #000;
       }
       ::before{
-        float: left;
+        display: none;
         content: url("/themes/custom/agiledrop_kick/assets/images/icons/address-icon.png");
         border-right: 4px solid rgb(41, 193, 225);
         padding: 20px 20px 20px 0;
         margin: 0 20px 0 20px;
       }
     }
+  }
+  .layout-sidebar-second {
+    width: 100%;
+    display: block;
+    float: none;
   }
 }
