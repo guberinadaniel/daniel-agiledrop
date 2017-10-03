@@ -100,6 +100,7 @@
     display: none;
   }
 }
+
 //****************************
 // Footer top | screen-xs
 //****************************
@@ -133,6 +134,7 @@
         .button-wraper {
           margin-bottom: 40px;
           p.text-align-center-utility-blue {
+            position: relative;
             font-size: medium;
             background-color: rgb(41, 193, 225);
             border: 1px solid rgb(41, 193, 225);
@@ -156,6 +158,7 @@
             }
           }
           p.text-align-center-utility-orange {
+            position: relative;
             font-size: medium;
             background-color: rgb(247, 147, 29);
             border: 1px solid rgb(247, 147, 29);
