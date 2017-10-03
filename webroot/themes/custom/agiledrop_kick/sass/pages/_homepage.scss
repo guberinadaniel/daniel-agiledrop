@@ -8,7 +8,7 @@
 //**************************
 //Main content on homepage
 //**************************
-
+/*
 .region-content {
   display: flex;
   max-width: 1200px;
@@ -163,6 +163,175 @@
             }
           }
 
+        }
+      }
+    }
+  }
+}
+*/
+@media (max-width:$screen-xs) {
+  .region-content {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+
+    #block-welcometoonboardingproject {
+      width: 100%;
+      padding-right: 0px;
+      h2{
+        text-transform: uppercase;
+        padding: 0 15px;
+        margin-top: 0;
+      }
+      h4{
+        text-transform: uppercase;
+        margin-top: -10px;
+        padding: 0 15px;
+      }
+      p {
+        text-align: justify;
+        padding: 0 15px;
+      }
+    }
+
+    #block-boostyourevent {
+      width: 100%;
+
+      .boost-event {
+        padding: 15px;
+        border: 2px solid #c8c6c6;
+        margin: 15px;
+        img {
+          display: inline-block;
+          max-width: 19%;
+          width: 100%;
+          vertical-align: top;
+        }
+        .boost-event-text {
+          display: inline-block;
+          max-width: 80%;
+          font-size: 14px;
+          width: 100%;
+          padding-left: 15px;
+          h4{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //*******************************
+  //View latest event on homepage | xs-screen
+  //*******************************
+  .region-featured-first {
+    background-color: rgb(221, 231, 233);
+    #block-views-block-homepage-latest-events-block-1 {
+      margin: auto;
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding:30px 0 20px 0;
+        margin:0;
+      }
+      .view-content {
+        display: block;
+        padding-bottom: 30px;
+        img {
+        }
+        .views-field-title {
+          padding: 20px 0 0 30px;
+          a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+              color: rgb(110, 110, 110);
+            }
+            &:active {
+              color: rgb(0, 0, 0);
+            }
+          }
+        }
+        .views-field-field__event-start-date {
+          padding: 0 0 30px 30px;
+          .field-content {
+            color: rgb(247, 147, 29);
+            font-size: small;
+
+          }
+        }
+        .views-row {
+          max-width: 280px;
+          width: 100%;
+          margin: 15px auto;
+          background: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+  //************************************************
+  //View featured companies on homepage | xs-screen
+  //************************************************
+
+  .region-featured-second {
+    #block-views-block-featured-companies-block-1 {
+      margin: auto;
+      h2 {
+        text-transform: uppercase;
+        margin: 60px 0;
+      }
+      .view-featured-companies {
+        .more-link {
+          position: relative;
+          display: block;
+          width: 100%;
+          text-align: center;
+          a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: rgb(41, 193, 225);
+            border: 1px solid rgb(41, 193, 225);
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 20px 15px 20px 15px;
+            padding: 1.4em 1.5em;
+          }
+        }
+        .view-content {
+          display: block;
+          .views-row {
+            position: relative;
+            margin: 15px;
+            padding: 15px;
+            border: 2px solid #c8c6c6;
+            .views-field-title {
+              margin-bottom: 10px;
+              h5 {
+                display: inline;
+                a {
+                  text-decoration: none;
+
+                }
+              }
+            }
+            img {
+              height: 80px;
+              width: 80px;
+              float: left;
+              margin: 0 20px 0 0;
+            }
+            .views-field-field__company-description {
+              display: flex;
+              p {
+                margin:0;
+              }
+            }
+
+          }
         }
       }
     }

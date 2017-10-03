@@ -5,7 +5,7 @@
 //
 // ========================================
 
-
+/*
 header {
   .fluid {
     display: block;
@@ -62,6 +62,82 @@ header {
             display: flex;
             align-items: center;
             font-size: small;
+          }
+        }
+      }
+    }
+  }
+}
+*/
+
+@media (max-width:$screen-xs) {
+  header {
+    .fluid {
+      display: block;
+      width: 100%;
+      background: rgb(221, 231, 233);
+      .region-header{
+        margin: auto;
+        width: 100%;
+        display: block;
+        #block-onboardingproject {
+          margin: auto;
+          width: 100%;
+          display: block;
+          color: rgb(85, 89, 95);
+          .field--name-body {
+            display: block;
+            p {
+              font-family: 'Montserrat', sans-serif;
+              font-size: small;
+              margin: 0 auto;
+              text-align: center;
+            }
+          }
+        }
+
+        #block-headerphonenumber {
+          .align-left{
+            float: none;
+          }
+          color: rgb(85, 89, 95);
+          .field--name-body {
+            display: block;
+            img {
+              display: inline-block;
+              vertical-align: middle;
+              width: 25px;
+              height: 25px;
+              .align-left {
+                float: none;
+              }
+            }
+            p {
+              text-align: center;
+              margin: 10px 0;
+              font-size: small;
+            }
+          }
+        }
+        #block-headeremailaddress {
+          .align-left{
+            float: none;
+          }
+          color: rgb(85, 89, 95);
+          .field--name-body {
+            display: block;
+            justify-content: flex-end;
+            img {
+              display: inline-block;
+              vertical-align: middle;
+              width: 25px;
+              height: 25px;
+            }
+            p {
+              text-align: center;
+              margin: 10px 0;
+              font-size: small;
+            }
           }
         }
       }

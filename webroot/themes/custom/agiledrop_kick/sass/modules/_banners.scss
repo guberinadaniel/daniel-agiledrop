@@ -42,3 +42,15 @@
     }
   }
 }
+@media (max-width:$screen-xs) {
+  .path-companies,
+  .path-events,
+  .path-locations,
+  .page-node-type-company-ct,
+  .page-node-type-event,
+  .page-node-type-location {
+  .banner {
+    display: none;
+    }
+  }
+}
