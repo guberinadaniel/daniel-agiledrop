@@ -82,7 +82,7 @@
   }
 }
 */
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs),(max-width:$screen-sm) {
   .filter {
     background: #757575;
     .fluid {

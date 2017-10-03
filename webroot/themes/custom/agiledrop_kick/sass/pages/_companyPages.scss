@@ -310,7 +310,7 @@
 }
 */ //TODO delte
 
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs),(max-width:$screen-sm) {
   .sidebar-one .layout-content {
     width: 100%;
     display: block;
@@ -634,3 +634,4 @@
     float: none;
   }
 }
+

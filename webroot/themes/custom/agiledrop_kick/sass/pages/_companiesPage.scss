@@ -107,3 +107,58 @@
     }
   }
 }
+
+@media (max-width:$screen-sm) {
+  .view-companies {
+    .view-content {
+      .views-row {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        padding: 30px 15px;
+        border-bottom: 2px solid rgb(221, 231, 233);
+        img {
+          float: left;
+          clear: both;
+          max-width: 19%;
+          width: 100%;
+          margin: 0 15px 10px 0;
+        }
+        .views-field-field__company-title {
+          display: inline-block;
+          border-left: 4px solid rgb(41, 193, 225);
+          h3 {
+            padding-left: 10px;
+            margin: 0;
+          }
+        }
+        .views-field-field__company-description{
+          display: flex;
+        }
+        .views-field-view-node {
+          text-align: center;
+          a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            &:hover {
+              background-color: rgb(247, 147, 29);
+              border: 1px solid rgb(247, 147, 29);
+            }
+
+            background-color: rgb(41, 193, 225);
+            border: 1px solid rgb(41, 193, 225);
+            font-size: small;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 1em 15%;
+            border-radius: 1em;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
