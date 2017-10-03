@@ -34,7 +34,7 @@
 }
 */
 
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs), (max-width:$screen-sm) {
   .region-footer-bottom {
     display: block;
     margin: 30px auto 30px auto;

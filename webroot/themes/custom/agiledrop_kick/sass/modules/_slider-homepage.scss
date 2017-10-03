@@ -46,7 +46,7 @@
   }
 }
 */
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs), (max-width:$screen-sm) {
   #block-views-block-slideshow-homepage-block-1 {
     .views-field-nothing {
       .caption {

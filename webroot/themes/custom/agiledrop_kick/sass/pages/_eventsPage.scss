@@ -106,7 +106,7 @@
 }
 */
 
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs), (max-width:$screen-sm) {
   .view-events {
     .view-content {
       display: flex;

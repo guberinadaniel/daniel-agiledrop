@@ -132,7 +132,7 @@
 //******************************************
 //Event pages | content styling | SCREEN-XS
 //******************************************
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs), (max-width:$screen-sm) {
   .layout-sidebar-first {
     width: 100%;
     display: block;

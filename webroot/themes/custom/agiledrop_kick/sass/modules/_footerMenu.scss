@@ -39,7 +39,7 @@
 }
 */
 
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs), (max-width:$screen-sm) {
   .region-footer-menu {
     display: block;
     margin: 0 15px;

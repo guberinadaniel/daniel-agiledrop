@@ -42,7 +42,7 @@
     }
   }
 }
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs), (max-width:$screen-sm) {
   .path-companies,
   .path-events,
   .path-locations,
