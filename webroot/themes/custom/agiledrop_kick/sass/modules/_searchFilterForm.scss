@@ -2,87 +2,90 @@
 //**************************************************************
 //Filter search form for the company, event and location page.
 //***************************************************************
-/*
-.filter {
-  background: #757575;
-  .fluid {
-    width: 1200px;
-    margin: auto;
-    .region-search-filter {
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
+@media (min-width: $screen-sm) {                                                              //<---------------768px +
+  .filter {
+    background: #757575;
+    .fluid {
+      max-width: 1200px;
+      margin: auto;
+      .region-search-filter {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+      }
     }
   }
-}
-//------------------------
-//Select js form
-//------------------------
+  //------------------------
+  //Search form
+  //------------------------
 
-#block-searchcompanies,
-#block-searchevents,
-#block-searchlocations{
-  text-transform: uppercase;
-  margin-right: 20px;
-  font-family: 'Montserrat', sans-serif;
-  .text-formatted p:nth-child(1) {
-    margin: 22px 0 0;
-    font-size: small;
-    color: white;
-    background: orange;
-    display: inline-block;
-  }
-  .text-formatted p:nth-child(2) {
-    color: white;
-    margin: 0;
-    font-weight: bold;
-
-  }
-}
-
-//------------------------
-//Auto complete text form
-//------------------------
-
-.block-views-exposed-filter-blockcompanies-page-1,
-.block-views-exposed-filter-blockevents-page-1,
-.block-views-exposed-filter-blocklocations-page-1 {
-  background: #757575;
-  .form-autocomplete.form-text {
-    padding: 10px;
-    border: 1px solid #757575;
-    border-radius: 0.3em;
-  }
-  .js-form-type-select {
+  #block-searchcompanies,
+  #block-searchevents,
+  #block-searchlocations {
     text-transform: uppercase;
-    border: 1px solid #757575;
-    border-radius: 0.3em;
-    padding: 5px;
-    background: white;
-    label {
-      color: rgb(110, 110, 110);
-      padding-right: 15px;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    .text-formatted p:nth-child(1) {
+      margin: 10px 0 5px 20px;
       font-size: small;
+      color: white;
+      background: orange;
+      display: inline-block;
+    }
+    .text-formatted p:nth-child(2) {
+      color: white;
+      margin: 5px 0 10px 20px;
+      font-weight: bold;
     }
   }
-  #edit-actions {
-    display: inline-block;
-    #edit-submit-companies,
-    #edit-submit-events,
-    #edit-submit-locations {
-      color: white;
-      background: rgb(247, 147, 29);
-      text-transform: uppercase;
-      padding: 9px 40px;
+
+  //------------------------
+  //Auto complete text form
+  //------------------------
+
+  .block-views-exposed-filter-blockcompanies-page-1,
+  .block-views-exposed-filter-blockevents-page-1,
+  .block-views-exposed-filter-blocklocations-page-1 {
+    background: #757575;
+    display: flex;
+    .form-autocomplete.form-text {
+      padding: 10px;
+      border: 1px solid #757575;
       border-radius: 0.3em;
-      &:hover {
-        background: rgb(188, 110, 27);
+      max-width: 325px;
+    }
+    .js-form-type-select {
+      text-transform: uppercase;
+      border: 1px solid #757575;
+      border-radius: 0.3em;
+      padding: 5px;
+      background: white;
+      label {
+        color: rgb(110, 110, 110);
+        padding-right: 15px;
+        font-size: small;
+      }
+    }
+    #edit-actions {
+      display: inline-block;
+      #edit-submit-companies,
+      #edit-submit-events,
+      #edit-submit-locations {
+        color: white;
+        background: rgb(247, 147, 29);
+        text-transform: uppercase;
+        padding: 9px 40px;
+        border-radius: 0.3em;
+        &:hover {
+          background: rgb(188, 110, 27);
+        }
       }
     }
   }
 }
-*/
-@media (max-width:$screen-xs),(max-width:$screen-sm) {
+
+@media (max-width:$screen-sm) {         //    both mobile and tablet                          <---------------768px max
   .filter {
     background: #757575;
     .fluid {
@@ -136,11 +139,13 @@
       margin-right: 0;
     }
     .form-autocomplete.form-text {
+      max-width: 600px;
       padding: 10px 0;
       border: 1px solid #757575;
       width: 100%;
     }
     .js-form-type-select {
+      max-width: 600px;
       width: 100%;
       padding: 5px;
       text-transform: uppercase;

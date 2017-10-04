@@ -5,72 +5,72 @@
 //
 // ========================================
 
-/*
-header {
-  .fluid {
-    display: block;
-    width: 100%;
-    background: rgb(221, 231, 233);
-    .region-header{
-      display: flex;
-      width: 1200px;
-      margin: auto;
-      #block-onboardingproject {
-        width:50%;
-        color: rgb(85, 89, 95);
-        .field--name-body {
-          display: flex;
-          justify-content: flex-start;
-          p {
-            font-family: 'Montserrat', sans-serif;
-            margin: 12px 0;
-            font-size: small;
+@media (min-width: $screen-sm) {                                                              //<---------------768px +
+  header {
+    .fluid {
+      display: block;
+      width: 100%;
+      background: rgb(221, 231, 233);
+      .region-header {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        #block-onboardingproject {
+          width: 50%;
+          color: rgb(85, 89, 95);
+          .field--name-body {
+            display: flex;
+            justify-content: flex-start;
+            p {
+              font-family: 'Montserrat', sans-serif;
+              margin: 12px 0;
+              font-size: small;
+            }
           }
         }
-      }
 
-      #block-headerphonenumber {
-        width:24%;
-        color: rgb(85, 89, 95);
-        .field--name-body {
-          display: flex;
-          justify-content: flex-end;
-          img {
-            width: 25px;
-            height: 25px;
-          }
-          p {
-            margin: 10px 0;
+        #block-headerphonenumber {
+          width: 24%;
+          color: rgb(85, 89, 95);
+          .field--name-body {
             display: flex;
-            align-items: center;
-            font-size: small;
+            justify-content: flex-end;
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            p {
+              margin: 10px 0;
+              display: flex;
+              align-items: center;
+              font-size: small;
+            }
           }
         }
-      }
-      #block-headeremailaddress {
-        width:24%;
-        color: rgb(85, 89, 95);
-        .field--name-body {
-          display: flex;
-          justify-content: flex-end;
-          img {
-            width: 25px;
-            height: 25px;
-          }
-          p {
-            margin: 10px 0;
+        #block-headeremailaddress {
+          width: 24%;
+          color: rgb(85, 89, 95);
+          .field--name-body {
             display: flex;
-            align-items: center;
-            font-size: small;
+            justify-content: flex-end;
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            p {
+              margin: 10px 0;
+              display: flex;
+              align-items: center;
+              font-size: small;
+            }
           }
         }
       }
     }
   }
 }
-*/
-/*
-@media (max-width:$screen-xs) {
+
+@media (max-width:$screen-xs) {                                                             //<---------------420px max
   header {
     .fluid {
       display: block;
@@ -144,9 +144,9 @@ header {
     }
   }
 }
-*/
 
-@media (max-width:$screen-sm) {
+
+@media (min-width: $screen-xs) and (max-width: $screen-sm)  {                          //<--------------- 420px - 768px
   header {
     .fluid {
       display: block;

@@ -2,57 +2,56 @@
 //**********************************
 //Companies page content styling
 //**********************************
-/*
-.view-companies {
-  .view-content {
-    .views-row {
-      padding: 50px 0;
-      border-bottom: 2px solid rgb(221, 231, 233);
-      img {
-        float: left;
-        clear: both;
-        margin-right: 50px;
-        margin-bottom: 60px;
-        padding-top: 5px;
-      }
-      .views-field-field__company-title {
-        display: inline-block;
-        border-left: 4px solid rgb(41, 193, 225);
-        h3 {
-          padding-left: 10px;
-          margin: 0;
+@media (min-width: $screen-sm) {                                                              //<---------------768px +
+  .view-companies {
+    .view-content {
+      .views-row {
+        padding: 50px 0;
+        border-bottom: 2px solid rgb(221, 231, 233);
+        img {
+          float: left;
+          clear: both;
+          margin-right: 50px;
+          margin-bottom: 60px;
+          padding-top: 5px;
         }
-      }
-      .views-field-field__company-description{
-
-      }
-      .views-field-view-node {
-        a{
-          color: rgb(255, 255, 255);
-          text-decoration: none;
-          &:hover {
-            background-color: rgb(247, 147, 29);
-            border: 1px solid rgb(247, 147, 29);
-          }
-
-          background-color: rgb(41, 193, 225);
-          border: 1px solid rgb(41, 193, 225);
-          font-size: small;
+        .views-field-field__company-title {
           display: inline-block;
-          text-align: center;
-          text-transform: uppercase;
-          cursor: pointer;
-          margin-top: 20px;
-          padding: 0.4em 1.2em;
-          border-radius: 1.5em;
-          line-height: normal;
+          border-left: 4px solid rgb(41, 193, 225);
+          h3 {
+            padding-left: 10px;
+            margin: 0;
+          }
+        }
+        .views-field-field__company-description {
+        }
+        .views-field-view-node {
+          a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            &:hover {
+              background-color: rgb(247, 147, 29);
+              border: 1px solid rgb(247, 147, 29);
+            }
+
+            background-color: rgb(41, 193, 225);
+            border: 1px solid rgb(41, 193, 225);
+            font-size: small;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 0.4em 1.2em;
+            border-radius: 1.5em;
+            line-height: normal;
+          }
         }
       }
     }
   }
 }
-*/
-@media (max-width:$screen-xs) {
+@media (max-width:$screen-xs) {                                                             //<---------------420px max
   .view-companies {
     .view-content {
       .views-row {
@@ -108,7 +107,7 @@
   }
 }
 
-@media (max-width:$screen-sm) {
+@media (min-width: $screen-xs) and (max-width: $screen-sm)  {                         //<--------------- 420px - 768px
   .view-companies {
     .view-content {
       .views-row {
