@@ -1,110 +1,116 @@
-/*
+//***********************
+//Footer top region
+//***********************
+
+@media (min-width: $screen-sm) {                                                              //<---------------768px +
   footer {
-  display: block;
-  width: 100%;
-}
-.region-footer-top {
-  #block-onemonthfreeservice {
     display: block;
-    width: 1200px;
-    margin: 150px auto 0 auto;
-    .field__item {
-      position: relative;
-      .blue-triangle {
-        position: absolute;
-        top: -77px;
-        right: 105px;
-        z-index: 1;
-      }
-      .orange-triangle {
-        position: absolute;
-        right: -1px;
-        top: -107px;
-      }
-      hr {
-        width: 100%;
-        border-top: 1px solid rgb(221, 231, 233);
-      }
-      h2 {
-        text-align: center;
-        span {
-          color: rgb(247, 147, 29);
+    width: 100%;
+  }
+  .region-footer-top {
+    #block-onemonthfreeservice {
+      display: block;
+      max-width: 1200px;
+      margin: 150px auto 0 auto;
+      .field__item {
+        position: relative;
+        .blue-triangle {
+          position: absolute;
+          top: -77px;
+          right: 105px;
+          z-index: 1;
         }
-      }
-      p {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: small;
-        color: rgb(85, 89, 95);
-      }
-      .button-wraper {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-        p.text-align-center-utility-blue {
-          &:hover {
-            background-color: rgb(38, 142, 172);
-            border: 1px solid rgb(38, 142, 172);
-          }
-          background-color: rgb(41, 193, 225);
-          border: 1px solid rgb(41, 193, 225);
-          display: inline-block;
+        .orange-triangle {
+          position: absolute;
+          right: -1px;
+          top: -107px;
+        }
+        hr {
+          width: 100%;
+          border-top: 1px solid rgb(221, 231, 233);
+        }
+        h2 {
           text-align: center;
-          text-transform: uppercase;
-          cursor: pointer;
-          margin: 20px 10px 0 10px;
-          padding: 0.500em 2.1em;
-          border-radius: 1.2em;
-          line-height: normal;
-          a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
+          span {
+            color: rgb(247, 147, 29);
           }
         }
-        p.text-align-center-utility-orange {
-          &:hover {
-            background-color: rgb(188, 110, 27);
-            border: 1px solid rgb(188, 110, 27);
-          }
-          background-color: rgb(247, 147, 29);
-          border: 1px solid rgb(247, 147, 29);
-          display: inline-block;
+        p {
           text-align: center;
           text-transform: uppercase;
-          cursor: pointer;
-          margin: 20px 10px 0 10px;
-          padding: 0.500em 1.063em;
-          border-radius: 1.2em;
-          line-height: normal;
-          a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
+          font-size: small;
+          color: rgb(85, 89, 95);
+        }
+        .button-wraper {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+          p.text-align-center-utility-blue {
+            &:hover {
+              background-color: rgb(38, 142, 172);
+              border: 1px solid rgb(38, 142, 172);
+            }
+            background-color: rgb(41, 193, 225);
+            border: 1px solid rgb(41, 193, 225);
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 20px 10px 0 10px;
+            padding: 0.500em 2.1em;
+            border-radius: 1.2em;
+            line-height: normal;
+            a {
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+            }
+          }
+          p.text-align-center-utility-orange {
+            &:hover {
+              background-color: rgb(188, 110, 27);
+              border: 1px solid rgb(188, 110, 27);
+            }
+            background-color: rgb(247, 147, 29);
+            border: 1px solid rgb(247, 147, 29);
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 20px 10px 0 10px;
+            padding: 0.500em 1.063em;
+            border-radius: 1.2em;
+            line-height: normal;
+            a {
+              color: rgb(255, 255, 255);
+              text-decoration: none;
+            }
           }
         }
       }
     }
   }
-}
-*/
-//****************************************************************************
-// Disables triangles in the services section on all pages except on homepage
-//****************************************************************************
+  //****************************************************************************
+  // Disables triangles in the services section on all pages except on homepage
+  //****************************************************************************
 
-.path-companies,
-.path-events,
-.path-locations,
-.page-node-type-company-ct,
-.page-node-type-event,
-.page-node-type-location {
-  img.blue-triangle, img.orange-triangle {
-    display: none;
+  .path-companies,
+  .path-events,
+  .path-locations,
+  .page-node-type-company-ct,
+  .page-node-type-event,
+  .page-node-type-location {
+    img.blue-triangle, img.orange-triangle {
+      display: none;
+    }
   }
 }
+
 
 //****************************
 // Footer top | screen-xs
 //****************************
-@media (max-width:$screen-xs), (max-width:$screen-sm) {
+
+@media (max-width:$screen-sm) {         //    both mobile and tablet                          <---------------768px max
   footer {
     display: block;
     width: 100%;
@@ -186,6 +192,20 @@
     }
   }
   .path-frontpage {
+    img.blue-triangle, img.orange-triangle {
+      display: none;
+    }
+  }
+  //****************************************************************************
+  // Disables triangles in the services section on all pages except on homepage
+  //****************************************************************************
+
+  .path-companies,
+  .path-events,
+  .path-locations,
+  .page-node-type-company-ct,
+  .page-node-type-event,
+  .page-node-type-location {
     img.blue-triangle, img.orange-triangle {
       display: none;
     }

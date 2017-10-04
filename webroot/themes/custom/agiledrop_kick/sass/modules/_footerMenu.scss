@@ -1,45 +1,50 @@
-/*
-.region-footer-menu {
-  display: flex;
-  width: 1200px;
-  margin: 30px auto 30px auto;
-  a {
-    color: rgb(122, 132, 134);
-    text-decoration: none;
-    text-transform: uppercase;
-    &:hover {
-      color: rgb(221, 231, 233);
+//*********************
+//Footer menu region
+//********************
+
+@media (min-width: $screen-sm) {                                                              //<---------------768px +
+  .region-footer-menu {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto 30px auto;
+    a {
+      color: rgb(122, 132, 134);
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        color: rgb(221, 231, 233);
+      }
+      &:active {
+        color: rgb(0, 0, 0);
+      }
     }
-    &:active {
+    p {
+      text-transform: uppercase;
+      color: rgb(122, 132, 134);
+    }
+    strong {
       color: rgb(0, 0, 0);
     }
-  }
-  p {
-    text-transform: uppercase;
-    color: rgb(122, 132, 134);
-  }
-  strong {
-    color: rgb(0, 0, 0);
-  }
-  #block-footermenlogo {
-    width: 10%;
-  }
-  #block-footermenu {
-    width: 30%;
-    padding-left: 60px;
-  }
-  #block-footercontact {
-    width: 30%;
-    padding-left: 60px;
-  }
-  #block-newsleter {
-    width: 30%;
-    padding-left: 60px;
+    #block-footermenlogo {
+      margin: 0 auto;
+      display: inline-block;
+    }
+    #block-footermenu {
+      margin: 0 auto;
+      display: inline-block;
+    }
+    #block-footercontact {
+      margin: 0 auto;
+      display: inline-block;
+    }
+    #block-newsleter {
+      margin: 0 auto;
+      display: inline-block;
+    }
   }
 }
-*/
 
-@media (max-width:$screen-xs), (max-width:$screen-sm) {
+@media (max-width:$screen-sm) {         //    both mobile and tablet                          <---------------768px max
   .region-footer-menu {
     display: block;
     margin: 0 15px;

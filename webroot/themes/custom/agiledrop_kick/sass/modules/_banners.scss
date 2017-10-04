@@ -1,48 +1,50 @@
-.banner {
-  .fluid {
-    display: block;
-    width: 100%;
-    margin: auto;
-    .region-banner {
-      #block-eventsbanner,
-      #block-companiesbanner-2,
-      #block-locationsbanner {
-        position: relative;
-        text-align: center;
-        text-transform: uppercase;
-        .field--name-body{
-          img{
-            width: 100%;
-          }
-          h1{
-            color: white;
-            font-size: 2.5vw;
-            position: absolute;
-            margin-top: 7%;
-            //top: 45%;
-            top:0;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-          }
-          h4{
-            color: white;
-            font-size: 1vw;
-            font-weight: lighter;
-            position: absolute;
-            margin-top: 9%;
-            //top: 55%;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%
+@media (min-width: $screen-sm) { //<---------------768px +
+  .banner {
+    .fluid {
+      display: block;
+      width: 100%;
+      margin: auto;
+      .region-banner {
+        #block-eventsbanner,
+        #block-companiesbanner-2,
+        #block-locationsbanner {
+          position: relative;
+          text-align: center;
+          text-transform: uppercase;
+          .field--name-body {
+            img {
+              width: 100%;
+            }
+            h1 {
+              color: white;
+              font-size: 2.5vw;
+              position: absolute;
+              margin-top: 7%;
+              //top: 45%;
+              top: 0;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 100%;
+            }
+            h4 {
+              color: white;
+              font-size: 1vw;
+              font-weight: lighter;
+              position: absolute;
+              margin-top: 9%;
+              //top: 55%;
+              top: 0;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 100%
+            }
           }
         }
       }
     }
   }
 }
-@media (max-width:$screen-xs), (max-width:$screen-sm) {
+@media (max-width:$screen-sm) {         //    both mobile and tablet                          <---------------768px max
   .path-companies,
   .path-events,
   .path-locations,
